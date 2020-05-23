@@ -90,5 +90,64 @@ pub const ROOT_CA_CERT: &'static str = concat!(include_str!("./keys/ca.crt"),"\0
 pub const ROOT_CA_KEY: &'static str = concat!(include_str!("./keys/ca.key"),"\0");
 
 pub const EXPIRED_CERT_SUBJECT: &'static str = "CN=ExpiredNode";
-pub const EXPIRED_CERT: &'static str = concat!(include_str!("./keys/expired.crt"),"\0");
-pub const EXPIRED_KEY: &'static str = concat!(include_str!("./keys/expired.key"),"\0");
+// pub const EXPIRED_CERT: &'static str = concat!(include_str!("./keys/expired.crt"),"\0");
+// pub const EXPIRED_KEY: &'static str = concat!(include_str!("./keys/expired.key"),"\0");
+
+pub const EXPIRED_CERT: &'static [u8] = b"-----BEGIN CERTIFICATE-----
+MIIEIjCCAgqgAwIBAgIQEp7jjh4EXBbKv6nGmkRH8jANBgkqhkiG9w0BAQsFADAR
+MQ8wDQYDVQQDEwZSb290Q0EwHhcNMTkwOTA1MjEwNzQyWhcNMTkwOTA1MjEwODQy
+WjAWMRQwEgYDVQQDEwtFeHBpcmVkTm9kZTCCASIwDQYJKoZIhvcNAQEBBQADggEP
+ADCCAQoCggEBAOewBNbMSk8Ru6puwowiZtPpEHyIhNfBmPYHMLPciuPNRxajUPDm
+0egYk2bHKpXM4AT2o1CHAppZGShUNTy3Hnkbp3Zs3usgrzXyaGWfz4PLPFSIzd0t
+ciDdrUGKqqArq+PTqRVtfVpQFX/h1nA2x/1aQmES2Mx4v5vz0K6eMCJjETqSGxWO
+ekTMfAsclI3byheyL7A1mXLihBysj/DaclT42qGOxvrWteo3iH+TBFl9pzwVESBV
+p5KzVzL0QpEI0eNrkAsMs46HgHgYQeDiM4w5fgGXVphK2oVNfNBWdCjQXr3aq+eL
+MEDp2H+LNqzV+6J3e0sLTi6PdukXbqzlyuMCAwEAAaNxMG8wDgYDVR0PAQH/BAQD
+AgO4MB0GA1UdJQQWMBQGCCsGAQUFBwMBBggrBgEFBQcDAjAdBgNVHQ4EFgQURbdm
+Cj5LbX98YTpKAwxqWca0dj8wHwYDVR0jBBgwFoAUiS413SfVRGy7vVwkLIGdDA4y
+yoswDQYJKoZIhvcNAQELBQADggIBAL2YCL69kSfICx/gRGvQcoChvk5tQ1g8DCpo
+JQ0a3GsNW+ACjv/O9CWiYX2mjg/VyO7nMJWDacwVOgr3ckgIwcjpS0MXRDOABcSE
+gOxYezgpqEWenYTyNBV/gHkYZcaNXnGp6rCQ6Yz7gIGQ4ExlOEDWwzA7t8PjWCph
+jN1+HDUcdJooBr7WyqYuoDYpUTZFZq7chPdYeyXVhhb8A1mMw4MGt/RulrL/hAru
+RFvODsq3gdI9XAoollWN1ysdkGqwZrw3TdvFlVCV0MuMS2A2ayveNfjBNVIqfrYu
+VK8u2je9c2VIOBxvhD6fGrSNdUDcIfOqG3/bQ81nZ2+MCi1pPPO1gyZzSUg2eRsg
+egpasmyFwb84YcUtbZRZFj8lXbiBdbzd+oAmYbw+k3Ki1Efrik7lNG8JDN300Z74
+285FYAgtgJzJkClixpQi1AReLAkzNQ2JsNNFBkyRfc8BHEit2iue/QetuEUjv0Vh
+WFSG50uK4E2/vRC7eNyQKp2qhcLNwXULVmtwhuyzzG4HzJ6xkko/jbF/wTSFY5py
+pWfCK7fWQzgMCbqalMCUsUZsaBNvOIDpA/QZDNVqw/KDlhUSVT+y/rKPwVq/iyjQ
+2qQUYwKzYiF2rzeOx3PxlQDKTVA9QDwfFQZb7iu/33n0ahdT2WyeuZ0Cm4Ztqpzb
+LigtrEQx
+-----END CERTIFICATE-----\0";
+
+pub const EXPIRED_KEY: &'static [u8] = b"-----BEGIN PRIVATE KEY-----
+MIIEvgIBADANBgkqhkiG9w0BAQEFAASCBKgwggSkAgEAAoIBAQDnsATWzEpPEbuq
+bsKMImbT6RB8iITXwZj2BzCz3IrjzUcWo1Dw5tHoGJNmxyqVzOAE9qNQhwKaWRko
+VDU8tx55G6d2bN7rIK818mhln8+DyzxUiM3dLXIg3a1BiqqgK6vj06kVbX1aUBV/
+4dZwNsf9WkJhEtjMeL+b89CunjAiYxE6khsVjnpEzHwLHJSN28oXsi+wNZly4oQc
+rI/w2nJU+Nqhjsb61rXqN4h/kwRZfac8FREgVaeSs1cy9EKRCNHja5ALDLOOh4B4
+GEHg4jOMOX4Bl1aYStqFTXzQVnQo0F692qvnizBA6dh/izas1fuid3tLC04uj3bp
+F26s5crjAgMBAAECggEBAKsbqyc77zFgJlojvNij249rlDp01K9HkoE5JDXhjk3Z
+YEQOz4tq3OFtrQb91qyVh2kDAfBKFZkKbnMDZeH2V7IXw2DJ3QSHuf68jW9oTGjI
+Y0EHXAqaMqylKvy5vXPXbPYwbrKdjzNw67/reWScgKzSyS1KLwUrtE8oDRm5SFFL
+svuG3jOiDscXU+WD4fBLECSlZ8gmdHAl8KpQobtylp3s0ApJV9zcwE/yHoafhlr6
+/vi5UtLZyE0J3VGYc/5yrPI1Rvv8EO/8g7DCw5yF10AhwO6fuGv0IiuBX2SigNCN
+7/Y1DArGoif3hwCUDbsE0SJhsvYYVeUULfRXpJTHj2ECgYEA6fD1g35qvkkObLUw
+FLeKuCjCyy9uDlIev6Kk/SEWlCL8ZTo8a59JXYm2mT+shH+o0REQV4BQ6pkRtqev
+z/kPBaafIGPwF3S9MnZw0d+3GizbK5Bzj02CI64ZP7W9EzFR212M04Ld1mrl07uf
+70dnMUTKy/jThtBSOEJ/d+5BlFMCgYEA/Yiou3AFCgoxGq0orUfVFF4tyVEIeEz8
+OujvpoIIu3gjnqBukCceGQEG5/p4MGe+HVsssTmYpKFP80IwPW7WqkrYakBNEcCT
+aQ2/eCy+RVSt1rda4sgTYWV5VNNgQ6IDJtTKziuX1cSjIdbVLzrPV9K2s1+tXKLg
+SFJkfCfpHTECgYBXF1tvPorimDQEiFeD/uhnstUB64BfWHcWBKjDi6PqNjQcQ1fn
+AP/BENmnp6rEEPp6Co445Q46qA2OIFM1a5UKF4O5/TqOoOkmdi1+FHkIB5b4WuiK
+euJuAgxoSXJASOYecm9Q9rE7d8Rj1L+vxrdGAkQ1N0cYM0nIpAjsTwie/QKBgQDg
+BkI6JXh+b5UGIl2gB6nzbmh8y7p1Omlh0HP6KEp5BGZNAyvO+pGwvGSS1JIhC3pE
+zEyIaQFE7zkLFMA1eFv8a1ghQqIW/pgCquA12ythbbqR0MBhRTNCy3xThNc5y82H
+IV32oTRv8mnHO+Jx8kBGNO21P+Sax1zw6sTZpBZq8QKBgH5xnIoHv/AxR5wzokBt
+C4j3yqL0Gbs+moaswS1UR8XSnKt8TBcXVozCAy12A4qKSjkP7VKPTLeTOZxw0UBe
+8CzQYNKoIGy4ayFVi+VKaNCHKvJm0diQkKw5Tz7L5quBBjt8JpmRtNbPsjXiq4Is
+y14Xc4kb05mM5M9u685eWefa
+-----END PRIVATE KEY-----\0";
+
+pub const PRESHARED_KEY: &'static [u8] = &[
+    234, 206, 151, 23, 219,  21,  71, 144,
+    107,  42,  23, 67, 249, 173, 182, 224 ];
